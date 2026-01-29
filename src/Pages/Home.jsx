@@ -32,7 +32,7 @@ function Home() {
           <a href="#projects" className="btn primary">
             View Projects
           </a>
-          <a href="https://wa.link/34h52h" className="btn outline">
+          <a href="https://wa.link/6eamys" className="btn outline">
             Contact Me
           </a>
         </div>
