@@ -34,9 +34,7 @@ body {
   line-height: 1.7;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* NAVBAR */
 nav {
   position: sticky;
   top: 0;
@@ -88,9 +86,7 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/*HERO SECTION*/
 .hero {
   min-height: 90vh;
   display: grid;
@@ -102,12 +98,12 @@ nav a:hover::after {
 
 .hero-text h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
-  line-height: 1.2;
+  line-height: 1.37;
 }
 
 .hero-text span {
   background: var(--accent);
-  padding: 0 8px;
+  padding: 0 10px;
 }
 
 .hero-text .role {
@@ -155,9 +151,7 @@ nav a:hover::after {
   margin: auto;
 }
 
-/* =========================
-   ABOUT SECTION
-========================= */
+/* ABOUT SECTION */
 .about {
   padding: 6rem 10%;
   display: flex;
@@ -186,9 +180,7 @@ nav a:hover::after {
   color: var(--text-main);
 }
 
-/* =========================
-   PROJECTS SECTION
-========================= */
+/* PROJECTS SECTION*/
 .projects {
   padding: 6rem 10%;
   background: #f5f5f5;
@@ -230,9 +222,7 @@ nav a:hover::after {
   font-size: 1.3rem;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 footer {
   padding: 2rem;
   text-align: center;
