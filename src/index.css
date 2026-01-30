@@ -282,6 +282,17 @@ footer {
     margin-bottom: 1rem;
   }
 }
+
+@media (max-width: 403px){
+  .hero-actions{
+    gap: 1rem;
+  }
+
+  .btn {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
 /* General Styles */
 .navbar {
   display: flex;
