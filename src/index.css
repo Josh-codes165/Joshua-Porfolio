@@ -287,6 +287,9 @@ footer {
   .hero-actions{
     gap: 1rem;
   }
+  .about article {
+    padding: 30px;
+  }
 
   .btn {
     padding: 0.6rem 0.8rem;
