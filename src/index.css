@@ -167,8 +167,15 @@ nav a:hover::after {
 .about article {
   max-width: 900px;
   margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
 }
-
+.about article:hover {
+  border: 2px solid var(--accent);
+  transition: all 0.3s ease;
+}
 .about h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -244,7 +251,11 @@ footer {
     justify-content: center;
   }
 }
-
+@media (max-width: 892px) {
+  .hero {
+    gap: 10px;
+  }
+}
 @media (max-width: 600px) {
   nav {
     padding: 1rem 6%;
@@ -255,63 +266,79 @@ footer {
     padding: 4rem 6%;
   }
 }
+
+@media (max-width: 413px) {
+  .about h2 {
+    font-size: 2.5rem;
+  }
+
+  .about article {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .about h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+}
 /* General Styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5%;
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 
 /* Hide Hamburger by default (Desktop) */
 .hamburger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    transition: 0.3s;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: 0.3s;
 }
 
 /* Mobile View - Triggered at 768px */
 @media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
+  .hamburger {
+    display: flex;
+  }
 
-    .nav-links {
-        position: absolute;
-        top: 70px; /* Adjust based on nav height */
-        left: -100%; /* Hidden off-screen */
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-        padding: 2rem 0;
-    }
+  .nav-links {
+    position: absolute;
+    top: 70px; /* Adjust based on nav height */
+    left: -100%; /* Hidden off-screen */
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem 0;
+  }
 
-    .nav-links.active {
-        left: 0; /* Slide into view */
-    }
+  .nav-links.active {
+    left: 0; /* Slide into view */
+  }
 }
