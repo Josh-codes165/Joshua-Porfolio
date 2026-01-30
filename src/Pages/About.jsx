@@ -7,7 +7,7 @@ function About() {
         <h3>My Journey & Background</h3>
         <p>
           My name is Joshua Okoronkwo, a Frontend Developer driven by curiosity,
-          creativity, and a strong engineering mindset. I am currently a student
+          creativity, and a strong engineering mindset. I am currently a student of Computer Engineering
           at the Federal University of Technology, Owerri (FUTO), where I’ve been
           shaped by a culture of problem-solving and technical excellence.
         </p>
