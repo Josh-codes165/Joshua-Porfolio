@@ -174,7 +174,9 @@ nav a:hover::after {
 }
 .about article:hover {
   border: 2px solid var(--accent);
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
+  transform: translateY(-2px);
+
 }
 .about h3 {
   font-size: 1.8rem;
