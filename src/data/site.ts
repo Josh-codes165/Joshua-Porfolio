@@ -6,29 +6,29 @@ export const contactLinks = {
   twitter: "https://x.com/0x_joshio",
 };
 
-export const journey: { period: string; title: string; description: string }[] = [
-  {
-    period: "Ongoing",
-    title: "Computer Engineering, FUTO",
-    description:
-      "Studying Computer Engineering at the Federal University of Technology Owerri, while building frontend projects alongside coursework.",
-  },
-  {
-    period: "Ongoing",
-    title: "AltSchool Africa — Frontend Engineering",
-    description:
-      "Frontend development training with AltSchool Africa, including graded coursework projects such as a Vue 3 blog application.",
-  },
-  {
-    period: "Recent",
-    title: "Client & product work",
-    description:
-      "Designed and shipped real client sites — Kings Palm Homes, Gravity Properties, Satiate Restaurant and Xhrine x De Angels — alongside personal products like CareFinder and Startup IQ, each taken from first component to production deploy.",
-  },
-  {
-    period: "Ongoing",
-    title: "Content & community",
-    description:
-      "Creating developer-focused content for beginners as @JoshLoading, and involved with the Methodist Teenagers Fellowship community.",
-  },
-];
+export const journey: { period: string; title: string; description: string }[] =
+  [
+    {
+      period: "Ongoing",
+      title: "Computer Engineering, FUTO",
+      description:
+        "Studying Computer Engineering at the Federal University of Technology Owerri, while building frontend projects alongside coursework.",
+    },
+    {
+      period: "Graduated",
+      title: "Frontend Engineering — AltSchool Africa",
+      description:"Completed intensive frontend engineering training, building production-ready projects including a full-featured Vue 3 blog application.",
+    },
+    {
+      period: "Recent",
+      title: "Client & product work",
+      description:
+        "Designed and shipped real client sites — Kings Palm Homes, Gravity Properties, Satiate Restaurant and Xhrine x De Angels — alongside personal products like CareFinder and Startup IQ, each taken from first component to production deploy.",
+    },
+    {
+      period: "Ongoing",
+      title: "Content & community",
+      description:
+        "Creating developer-focused content for beginners as @JoshLoading, and involved with the Methodist Teenagers Fellowship community.",
+    },
+  ];

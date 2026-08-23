@@ -42,7 +42,7 @@ export default function Hero() {
           </div>
 
           <a
-            href="/resume.pdf"
+            href="https://docs.google.com/document/d/1_E9I45RUHA00tQf5gMLiJoPcSfHwY35rVqJAZRFwT_4/export?format=pdf"
             className="mt-6 inline-block font-mono text-xs text-ink-faint hover:text-ink-muted underline underline-offset-4 transition-colors"
           >
             Download Resume →
