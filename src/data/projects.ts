@@ -1,3 +1,10 @@
+import carefinderImg from "../assets/projects/carefinder.webp";
+import startupiqImg from "../assets/projects/startupiq.webp";
+import kingspalmImg from "../assets/projects/kingspalm.webp";
+import satiateImg from "../assets/projects/satiate.webp";
+import gravityImg from "../assets/projects/gravity.webp";
+import xhrineImg from "../assets/projects/xhrine.webp";
+
 export type Project = {
   slug: string;
   name: string;
@@ -6,6 +13,7 @@ export type Project = {
   solution: string;
   features: string[];
   tech: string[];
+  image: string;
   live?: string;
   github?: string;
   featured: boolean;
@@ -21,13 +29,14 @@ export const projects: Project[] = [
     solution:
       "A civic health discovery platform that lets people search, filter and locate healthcare facilities on an interactive map, with ratings, reviews and shareable results.",
     features: [
-      "Interactive Mapbox facility search with radius filtering",
+      "Interactive Mapbox facility search with specialty and ownership filters",
       "Supabase backend with role-based access via RLS",
       "Facility ratings and reviews",
       "CSV export and email sharing of results",
       "Admin tools for managing facility data",
     ],
     tech: ["React", "TypeScript", "Supabase", "Mapbox", "React Query", "Vercel"],
+    image: carefinderImg,
     live: "https://carefinder-psi.vercel.app",
     github: "https://github.com/Josh-codes165/Carefinder",
     featured: true,
@@ -39,14 +48,17 @@ export const projects: Project[] = [
     problem:
       "Founders often build before they've stress-tested whether an idea is worth building — feedback comes too late.",
     solution:
-      "An interactive idea-validation tool that uses AI to analyze a startup concept and surface strengths, risks and market signal through a clean, dashboard-style interface.",
+      "An AI founder workspace that validates startup ideas, tracks health and investor-readiness scores, and surfaces market size and competition data through a clean dashboard.",
     features: [
-      "AI-powered idea analysis via the Gemini API",
-      "Interactive charts for scoring and breakdowns",
+      "AI-powered idea validation and scoring",
+      "Startup health, success probability and investor-readiness metrics",
+      "Market size and competition-level analysis",
+      "Analysis activity tracked over time",
       "Supabase-backed auth and saved ideas",
-      "Responsive dashboard UI built with App Router",
     ],
     tech: ["Next.js", "React", "TypeScript", "Gemini API", "Recharts", "Supabase"],
+    image: startupiqImg,
+    live: "https://idea-muse-11.lovable.app",
     featured: true,
   },
   {
@@ -56,46 +68,75 @@ export const projects: Project[] = [
     problem:
       "Many local restaurants have no real web presence beyond a social media page, which limits how new customers discover and trust them.",
     solution:
-      "A fast, conversion-focused restaurant website concept with a clear menu, strong visual hierarchy and mobile-first layout.",
+      "A fast, conversion-focused restaurant website with a clear menu, strong visual hierarchy and mobile-first layout.",
     features: [
       "Menu presentation built for scanning, not reading",
       "Mobile-first responsive layout",
       "Content centralized in a single data file for easy updates",
     ],
     tech: ["React", "TypeScript", "Vite", "Tailwind CSS"],
-    live: "https://satiate-eight.vercel.app/",
+    image: satiateImg,
+    live: "https://satiate-eight.vercel.app",
+    github: "https://github.com/Josh-codes165/Satiate",
     featured: true,
   },
   {
-    slug: "weather-app",
-    name: "Weather App",
-    tagline: "Real-time weather, handled gracefully.",
+    slug: "kings-palm-homes",
+    name: "Kings Palm Homes",
+    tagline: "Luxury real estate, presented like it.",
     problem:
-      "Weather widgets are easy to get wrong — slow loads, broken states, and no feedback while data is fetching.",
+      "Real estate listings in Owerri often live on generic templates that undersell the properties they're meant to showcase.",
     solution:
-      "A frontend project focused on doing the fundamentals well: clean API integration, proper loading and error states, and a responsive UI.",
+      "A premium real estate website for luxury homes and investment properties, built to feel as considered as the properties themselves.",
     features: [
-      "Live weather data from a public API",
-      "Loading and error states handled explicitly",
-      "Responsive layout across breakpoints",
+      "Editorial-style property presentation",
+      "Property, development and services sections",
+      "Inspection scheduling call-to-action throughout",
+      "Fully responsive, image-led layout",
     ],
-    tech: ["React", "TypeScript", "REST API"],
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    image: kingspalmImg,
+    live: "https://kings-palms-homes-1.vercel.app",
+    github: "https://github.com/Josh-codes165/Kings-Palms-Homes",
+    featured: true,
+  },
+  {
+    slug: "gravity-properties",
+    name: "Gravity Properties",
+    tagline: "Property search built around what buyers actually filter by.",
+    problem:
+      "Property seekers need to narrow results fast — by location, type, purpose and price — without wading through a cluttered interface.",
+    solution:
+      "A real estate platform for land, homes and investment opportunities in Owerri, with a structured search built around the filters buyers actually use.",
+    features: [
+      "Location, property type, purpose and price-range search",
+      "Clean, trust-forward hero and CTA structure",
+      "Responsive property browsing experience",
+    ],
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    image: gravityImg,
+    live: "https://gravity-property.vercel.app",
+    github: "https://github.com/Josh-codes165/Gravity-Property",
     featured: false,
   },
   {
-    slug: "northwood",
-    name: "NorthWood School",
-    tagline: "An institutional website, built with structure in mind.",
+    slug: "xhrine",
+    name: "Xhrine x De Angels",
+    tagline: "A 24-hour dining and nightlife venue, online.",
     problem:
-      "School websites often bury the information visitors actually need under cluttered navigation.",
+      "A 24-hour dining and nightlife venue needs a site that carries the same energy as the physical space, not a generic restaurant template.",
     solution:
-      "A polished institutional website concept with clear information architecture and a modern, structured navigation system.",
+      "A bold, editorial website concept for a 24-hour dining and nightlife venue in New Owerri, built around dramatic typography and venue photography.",
     features: [
-      "Semantic, structured content sections",
-      "Modern navigation system",
-      "Responsive frontend architecture",
+      "Large-format editorial typography and full-bleed imagery",
+      "WhatsApp ordering and table reservation CTAs",
+      "Menu, events and gallery sections",
+      "Content centralized in a single data file, deployed via Vercel",
     ],
-    tech: ["React", "TypeScript", "Tailwind CSS"],
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    image: xhrineImg,
+    live: "https://xhrine.vercel.app",
+    github: "https://github.com/Josh-codes165/XHRINE",
     featured: false,
   },
 ];

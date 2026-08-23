@@ -1,10 +1,9 @@
-// TODO(Joshua): drop in your real links — none of these are invented,
-// they're intentionally left blank so nothing fake ships to production.
 export const contactLinks = {
-  email: "", // e.g. "you@example.com"
+  // Pulled from your StartupIQ account screenshot — swap if you'd rather use a different inbox.
+  email: "joshuaokoronkwo54@gmail.com",
   github: "https://github.com/Josh-codes165",
-  linkedin: "",
-  twitter: "", // X / Twitter
+  linkedin: "https://www.linkedin.com/in/joshua-okoronkwo",
+  twitter: "https://x.com/0x_joshio",
 };
 
 export const journey: { period: string; title: string; description: string }[] = [
@@ -24,7 +23,7 @@ export const journey: { period: string; title: string; description: string }[] =
     period: "Recent",
     title: "Client & product work",
     description:
-      "Built and deployed real client sites (Satiate Restaurant, a 24-hour dining venue) and personal products (CareFinder, Startup IQ), taking each from first component to production deploy.",
+      "Designed and shipped real client sites — Kings Palm Homes, Gravity Properties, Satiate Restaurant and Xhrine x De Angels — alongside personal products like CareFinder and Startup IQ, each taken from first component to production deploy.",
   },
   {
     period: "Ongoing",

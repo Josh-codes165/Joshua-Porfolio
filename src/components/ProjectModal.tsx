@@ -47,6 +47,14 @@ export default function ProjectModal({
 
         <p className="mt-2 text-ink-muted">{project.tagline}</p>
 
+        <div className="mt-6 aspect-video rounded-xl border border-border overflow-hidden bg-surface-raised">
+          <img
+            src={project.image}
+            alt={`Screenshot of the ${project.name} website`}
+            className="w-full h-full object-cover object-top"
+          />
+        </div>
+
         <div className="mt-8 space-y-6">
           <div>
             <h4 className="font-mono text-[11px] uppercase tracking-wide text-violet-bright mb-2">

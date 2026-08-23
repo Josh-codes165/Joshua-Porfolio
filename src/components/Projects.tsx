@@ -32,10 +32,13 @@ export default function Projects() {
                 i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
               }`}
             >
-              <div className="relative aspect-video rounded-xl bg-surface-raised border border-border overflow-hidden flex items-center justify-center">
-                <span className="font-mono text-xs text-ink-faint">
-                  {project.name}
-                </span>
+              <div className="relative aspect-video rounded-xl bg-surface-raised border border-border overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={`Screenshot of the ${project.name} website`}
+                  loading="lazy"
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                />
                 <div className="absolute inset-0 bg-violet/0 group-hover:bg-violet/10 transition-colors" />
               </div>
 
@@ -92,21 +95,32 @@ export default function Projects() {
               <button
                 key={project.slug}
                 onClick={() => setSelected(project)}
-                className="group text-left rounded-2xl border border-border p-6 hover:border-violet transition-colors"
+                className="group text-left rounded-2xl border border-border overflow-hidden hover:border-violet transition-colors"
               >
-                <h3 className="font-display font-semibold text-lg text-ink group-hover:text-violet-bright transition-colors">
-                  {project.name}
-                </h3>
-                <p className="mt-2 text-sm text-ink-muted">{project.tagline}</p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {project.tech.slice(0, 3).map((t) => (
-                    <span
-                      key={t}
-                      className="font-mono text-[11px] px-2 py-1 rounded-full border border-border-strong text-ink-faint"
-                    >
-                      {t}
-                    </span>
-                  ))}
+                <div className="relative aspect-video bg-surface-raised overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={`Screenshot of the ${project.name} website`}
+                    loading="lazy"
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-violet/0 group-hover:bg-violet/10 transition-colors" />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-display font-semibold text-lg text-ink group-hover:text-violet-bright transition-colors">
+                    {project.name}
+                  </h3>
+                  <p className="mt-2 text-sm text-ink-muted">{project.tagline}</p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {project.tech.slice(0, 3).map((t) => (
+                      <span
+                        key={t}
+                        className="font-mono text-[11px] px-2 py-1 rounded-full border border-border-strong text-ink-faint"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </button>
             ))}
