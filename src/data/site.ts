@@ -1,5 +1,4 @@
 export const contactLinks = {
-  // Pulled from your StartupIQ account screenshot — swap if you'd rather use a different inbox.
   email: "joshuaokoronkwo54@gmail.com",
   github: "https://github.com/Josh-codes165",
   linkedin: "https://www.linkedin.com/in/joshua-okoronkwo",

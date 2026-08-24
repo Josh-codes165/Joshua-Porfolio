@@ -1,7 +1,7 @@
 const currently = [
   {
-    label: "Currently learning",
-    value: "React / Vue advanced patterns and frontend architecture",
+    label: "Graduated From",
+    value: "AltSchool Africa, 2025-2026 Karatu Cohort",
   },
   {
     label: "Currently building",
@@ -31,7 +31,7 @@ export default function About() {
             I'm a Computer Engineering student at FUTO and a frontend
             developer who enjoys turning ideas, designs and problems into
             functional digital experiences. Most of what I know, I've learned
-            by building — shipping real projects, breaking things, and
+            by building, shipping real projects, breaking things, and
             fixing them properly.
           </p>
           <p className="text-ink-muted text-lg leading-relaxed">
